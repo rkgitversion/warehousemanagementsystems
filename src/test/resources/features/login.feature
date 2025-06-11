@@ -42,7 +42,7 @@ Feature: This feature file verify the login functionality
       | abhisheknagula123@gmail.com  | testing123 |
       | rajashkera567@test.com       | Gmail@112  |
 
-  @smoke @regression @sanity @login  @HBP-1234
+  @smoke @regression @sanity @login  @HBP-1234 @loginwithValid
   Scenario: verify Login functionality with valid login credentials
     When user enter the email address "SuperAuto@yahoo.com"
     And user enter password "testing123"
