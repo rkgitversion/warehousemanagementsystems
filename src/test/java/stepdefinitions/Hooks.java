@@ -1,4 +1,4 @@
-package stepdefinitions;
+package src.test.java.stepdefinitions;
 
 import java.io.File;
 import java.nio.file.Files;
