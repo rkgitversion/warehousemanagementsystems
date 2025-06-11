@@ -35,13 +35,19 @@ Feature: This feature file verify the login functionality
     When user click on login button
     Then verify the logout link visible
 
-    Examples: 
+    Examples:
       | username                     | password   |
       | rktest083@yahoo.com          | testing123 |
       | sriramreddy00219@hotmail.com | testing123 |
       | abhisheknagula123@gmail.com  | testing123 |
       | rajashkera567@test.com       | Gmail@112  |
-      
+
+  @smoke @regression @sanity @login  @HBP-1234
+  Scenario: verify Login functionality with valid login credentials
+    When user enter the email address "SuperAuto@yahoo.com"
+    And user enter password "testing123"
+    When user click on login button
+    Then verify the logout link visible
       
 
 
